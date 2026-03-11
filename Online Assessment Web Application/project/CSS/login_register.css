@@ -1,0 +1,139 @@
+*{
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+body {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    background: #203a43;
+    width: 50%;
+    max-width: 360px;
+    padding: 2.5rem;
+    border-radius: 16px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.7);
+}
+
+.container h1 {
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #e0f7fa;
+    margin-bottom: 2rem;
+}
+
+.form {
+    position: relative;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.input {
+    width: 100%;
+    height: 46px;
+    padding: 12px 50px 12px 12px;
+    border-radius: 10px;
+    border: 1.5px solid #0f2027;
+    background-color: #203a43;
+    color: #e0f7fa;
+    font-size: 14px;
+    outline: none;
+}
+
+.input::placeholder {
+    color: #7f9fa5;
+}
+
+.input:focus {
+    outline: none;
+    border-color: #4dd0e1;
+    box-shadow: 0 0 0 3px rgba(77, 208, 225, 0.3);
+}
+
+.conditional {
+    display: none;
+}
+
+.conditional.show {
+    display: block;
+}
+
+.btn {
+    width: 100%;
+    padding: 12px;
+    margin-top: 0.5rem;
+    border: none;
+    border-radius: 12px;
+    background: #26c6da;
+    color: #002b36;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: #4dd0e1;
+}
+#toggle, #toggle-repeat {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    color: #7f9fa5;
+    font-size: 13px;
+    cursor: pointer;
+    padding: 0;
+}
+#toggle:hover, #toggle-repeat:hover {
+    opacity: 0.8;
+}
+.alert {
+    background: rgba(244, 67, 54, 0.15);
+    color: #ff8a80;
+    border-left: 4px solid #ff5252;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 14px;
+    margin-bottom: 1rem;
+}
+.success{
+    background: rgba(54, 244, 127, 0.457);
+    color: #45fa63;
+    border-left: 4px solid #0bff1b;
+
+}
+.container p {
+    text-align: center;
+    margin-top: 1.5rem;
+    font-size: 14px;
+    color: #b0bec5;
+}
+
+.container a {
+    color: #4dd0e1;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.container a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 2rem 1.5rem;
+    }
+
+    .container h1 {
+        font-size: 1.6rem;
+    }
+}

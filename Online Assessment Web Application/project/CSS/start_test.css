@@ -1,0 +1,148 @@
+/* General reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Body and background */
+body {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 2rem 0;
+    color: #e0f7fa;
+}
+
+/* Main test container */
+.test-container {
+    background: #203a43;
+    width: 60%;
+    max-width: 800px;
+    padding: 2rem;
+    border-radius: 16px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.7);
+}
+
+/* Heading and duration */
+.test-container h2 {
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.test-container p {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-size: 14px;
+    color: #b0bec5;
+}
+
+/* Timer style */
+#timer {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.time-up {
+    color: #ff5252;
+    font-weight: bold;
+}
+
+/* Question boxes */
+.question-box {
+    background: #2c5364;
+    padding: 1rem 1.5rem;
+    margin-bottom: 1.5rem;
+    border-radius: 12px;
+    border-left: 4px solid #26c6da;
+}
+
+.question-box p {
+    font-weight: 600;
+    margin-bottom: 0.8rem;
+}
+
+.question-box label {
+    display: block;
+    padding: 6px 10px;
+    margin-bottom: 6px;
+    border-radius: 8px;
+    background: #203a43;
+    cursor: pointer;
+    transition: background 0.2s;
+    font-size: 14px;
+    color: #e0f7fa;
+}
+
+.question-box label:hover {
+    background: #4dd0e1;
+    color: #002b36;
+}
+
+.question-box input[type="radio"] {
+    margin-right: 8px;
+}
+
+/* Submit button */
+#submitBtn {
+    width: 100%;
+    padding: 12px;
+    margin-top: 1rem;
+    border: none;
+    border-radius: 12px;
+    background: #26c6da;
+    color: #002b36;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+#submitBtn:hover {
+    background: #4dd0e1;
+}
+
+/* Disabled inputs styling */
+#testForm input:disabled,
+#testForm button:disabled,
+#testForm label.disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .test-container {
+        width: 90%;
+        padding: 1.5rem;
+    }
+
+    #timer {
+        font-size: 1.25rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .test-container {
+        padding: 1rem;
+    }
+
+    .question-box p {
+        font-size: 14px;
+    }
+
+    .question-box label {
+        font-size: 13px;
+    }
+
+    #submitBtn {
+        font-size: 15px;
+    }
+}

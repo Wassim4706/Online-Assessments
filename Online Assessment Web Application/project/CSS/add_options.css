@@ -1,0 +1,157 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #e0f7fa;
+}
+
+.container {
+    width: 95%;
+    max-width: 700px;
+}
+
+.card {
+    background: #203a43;
+    border-radius: 16px;
+    padding: 2rem;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.7);
+    margin-bottom: 1.5rem;
+}
+
+h4, h5 {
+    color: #e0f7fa;
+    margin-bottom: 1rem;
+}
+
+h4 {
+    font-size: 1.6rem;
+}
+
+h5 {
+    font-size: 1.2rem;
+}
+
+.alert {
+    background: rgba(77, 208, 225, 0.12);
+    border-left: 4px solid #4dd0e1;
+    padding: 12px;
+    border-radius: 10px;
+    font-size: 14px;
+    margin-bottom: 1.5rem;
+    color: #b0bec5;
+}
+
+.alert strong {
+    color: #e0f7fa;
+}
+
+.alert.success {
+    background: rgba(54, 244, 127, 0.2);
+    border-left: 4px solid #0bff1b;
+    color: #45fa63;
+}
+
+.list {
+    list-style: none;
+    margin-bottom: 1.5rem;
+}
+
+.list li {
+    background: #0f2027;
+    padding: 10px 12px;
+    border-radius: 10px;
+    margin-bottom: 8px;
+    font-size: 14px;
+}
+
+.badge {
+    padding: 4px 8px;
+    border-radius: 8px;
+    font-size: 12px;
+    margin-left: 8px;
+}
+
+.bg-success {
+    background: #0bff1b;
+    color: #002b36;
+    font-weight: 600;
+}
+
+label {
+    display: block;
+    margin-bottom: 6px;
+    font-size: 13px;
+    color: #b0bec5;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px 12px;
+    border-radius: 10px;
+    border: 1.5px solid #0f2027;
+    background: #203a43;
+    color: #e0f7fa;
+    font-size: 14px;
+    margin-bottom: 1rem;
+    outline: none;
+}
+
+input[type="text"]:focus {
+    border-color: #4dd0e1;
+    box-shadow: 0 0 0 3px rgba(77, 208, 225, 0.3);
+}
+
+input[type="checkbox"] {
+    margin-right: 8px;
+    transform: scale(1.1);
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 16px;
+    margin-top: 1rem;
+    margin-right: 8px;
+    border: none;
+    border-radius: 12px;
+    background: #26c6da;
+    color: #002b36;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background: #4dd0e1;
+}
+
+.btn.success {
+    background: #0bff1b;
+    color: #002b36;
+}
+
+.btn.success:hover {
+    opacity: 0.9;
+}
+
+span {
+    display: inline-block;
+    margin-top: 1rem;
+    font-size: 13px;
+    color: #ff8a80;
+}
+
+@media (max-width: 600px) {
+    .card {
+        padding: 1.5rem;
+    }
+}
